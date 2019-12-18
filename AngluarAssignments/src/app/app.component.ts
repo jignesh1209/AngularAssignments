@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngluarAssignments';
+  serverName :string = 'Test'
 }
