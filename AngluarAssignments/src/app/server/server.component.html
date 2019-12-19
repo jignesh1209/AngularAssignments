@@ -1,0 +1,11 @@
+
+<p>server works!</p>
+
+<input type="button" value="Display Details" (click)="onToggleDetails()" />
+<p *ngIf="showSecert">Secert password = jignesh</p>
+<div *ngFor="let item of log; let i= index"
+[ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transpernt' }"
+[ngClass]="{'white-text': i >= 5}"
+>
+ {{ item }}
+</div>

@@ -11,3 +11,5 @@
 </ng-template>
 
 <p [ngStyle]="{'backgroundColor': getColor()}" [ngClass]="{online: sStatus === 'online'}" *ngFor="let item of servers">server ID is {{ serverID }} and status is {{ sStatus }} and name is {{ serverName }}</p>
+
+<app-server></app-server>
