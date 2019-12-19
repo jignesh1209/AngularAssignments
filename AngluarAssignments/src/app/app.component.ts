@@ -7,5 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngluarAssignments';
-  serverName :string = 'Test'
+  serverName : string = 'Test';
+  serverStatus : boolean = false;
+  serverID : string = "10";
+  sStatus : string = "offline";
+  servers = ['TestServer','TestServer 2'];
+
+  constructor() {
+    this.sStatus = Math.random() > 0.5 ? "online" : "offline";
+  }
+
+  getServerCreated() {
+    this.serverStatus = true;
+    this.servers.push(this.serverName);
+    //this.serverName = "Server was created and server name is " + this.serverName;
+  }
+  getColor() {
+    return this.sStatus === "online" ? "green" : "red";
+  }
 }
